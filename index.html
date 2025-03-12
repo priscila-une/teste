@@ -1,21 +1,51 @@
 <DOCTYPE html>
 <html>
     <head>
+        <meta charset="UTF-8">
         <link rel="stylesheet" href="index.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap" rel="stylesheet">
+        <script src="/script.js" defer></script>
     </head>
     <body>
         <header>
-            <p>Logo</p> 
+            <h2 class="logo">Logo</h2> 
         </header>
 
-        <div >
-            <img src="https://plus.unsplash.com/premium_vector-1736807327032-a8ab72ec903e?q=80&w=2128&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="" />
+        <section>
+            <img src="https://images.unsplash.com/vector-1741203916535-a5ec1551b81c?q=80&w=2050&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="" />
             
             <div class="card">
             <h2>Título</h2>
             <p>
+                Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+            </div>        
+        </section>
+
+        <section>
+            <img src="https://plus.unsplash.com/premium_vector-1741120585074-6e1b944f43c8?q=80&w=2064&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="" />
+            
+            <div class="card">
+            <h3>Subtítulo</h3>
+            <p>
                 Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop</p>
             </div>        
+        </section>
+        
+        <div class="wrapper-button">
+            <button onclick="openModal()">Botão que abre popup</button>
+        </div>
+
+        <div id="fade-modal">
+            <div id="modal">
+                <button id="close-modal"> X </button>
+                <h4>Clique em atualizar para ter ver uma nova imagem :) </h4>
+                
+                <img id="img-random" src="https://picsum.photos/200/300?random=1">
+
+                <button class="update-button" onclick="updateImg()">Atualizar</button>
+            </div>
         </div>
     </body>
 </html>
