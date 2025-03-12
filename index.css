@@ -1,0 +1,17 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+header {
+    background-color:rgb(167, 160, 160);
+    padding: 10px;
+
+}
+
+.card{ 
+    display: flex; 
+    flex-direction: column;
+
+}
